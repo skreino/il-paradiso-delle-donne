@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" role="img" aria-label="Cabina per trattamento viso">
+  <defs><linearGradient id="bg" x1="0" x2="1"><stop stop-color="#fffdf9"/><stop offset="1" stop-color="#d8c2ae"/></linearGradient></defs>
+  <rect width="1200" height="900" fill="url(#bg)"/>
+  <rect x="130" y="100" width="940" height="600" rx="42" fill="#efe2d6"/>
+  <rect x="180" y="160" width="340" height="500" rx="170" fill="#fffdf9" opacity=".72"/>
+  <rect x="650" y="145" width="310" height="530" rx="155" fill="#d8c2ae" opacity=".8"/>
+  <rect x="270" y="590" width="660" height="110" rx="55" fill="#2b211d" opacity=".24"/>
+  <ellipse cx="560" cy="560" rx="270" ry="90" fill="#fffdf9" opacity=".65"/>
+  <circle cx="600" cy="240" r="68" fill="#c8a96a" opacity=".32"/>
+  <path d="M0 760h1200v140H0z" fill="#1e1714" opacity=".12"/>
+</svg>

@@ -1,17 +1,20 @@
 import Image from "next/image";
 import { Eye, MessageCircle } from "lucide-react";
-import { contactActions, images } from "@/config/site";
+import { contactActions, images, whatsappUrl } from "@/config/site";
 import { CTAButton } from "@/components/CTAButton";
 import { Reveal } from "@/components/Reveal";
 
 export function SignatureTreatmentSection() {
   return (
-    <section id="sguardo" className="section-shell grid gap-10 py-20 lg:grid-cols-[0.9fr_1.1fr] lg:items-center lg:py-28">
+    <section
+      id="sguardo"
+      className="section-shell grid gap-10 py-16 lg:grid-cols-[0.9fr_1.1fr] lg:items-center lg:py-24"
+    >
       <Reveal>
-        <div className="image-wash relative aspect-[4/5] overflow-hidden rounded-[2rem] border border-espresso/10 bg-nude shadow-soft">
+        <div className="image-wash relative aspect-[4/5] overflow-hidden rounded-[1.75rem] border border-espresso/10 bg-nude shadow-soft">
           <Image
             src={images.lashes}
-            alt="Dettaglio laminazione ciglia naturale"
+            alt="Laminazione ciglia con risultato naturale e ordinato"
             fill
             className="object-cover"
             sizes="(min-width: 1024px) 42vw, 100vw"
@@ -22,21 +25,24 @@ export function SignatureTreatmentSection() {
         <div className="mb-5 inline-flex h-12 w-12 items-center justify-center rounded-full bg-rose/12 text-rose">
           <Eye aria-hidden size={22} />
         </div>
-        <p className="eyebrow">Specialiste in laminazione e sguardo</p>
+        <p className="eyebrow">Laminazione e sguardo</p>
         <h2 className="mt-4 font-display text-4xl font-bold leading-tight text-espresso sm:text-6xl">
-          Uno sguardo curato cambia tutto, anche senza trucco.
+          Uno sguardo più ordinato, senza cambiare chi sei.
         </h2>
-        <div className="mt-6 space-y-5 text-base leading-8 text-charcoal/76">
+        <div className="mt-6 space-y-5 text-base leading-8 text-cocoa">
           <p>
-            La laminazione ciglia aiuta a valorizzare la curva naturale delle ciglia, rendendole più ordinate e visibili senza creare un effetto artificiale.
+            La laminazione ciglia valorizza la curva naturale delle ciglia e le
+            rende più visibili nella vita di tutti i giorni. È una scelta adatta
+            se vuoi un effetto curato, ma non artificiale.
           </p>
           <p>
-            È indicata se vuoi uno sguardo più aperto, una routine più semplice al mattino o un risultato pulito che resti naturale. Prima del trattamento osserviamo le tue ciglia e ti spieghiamo cosa aspettarti.
+            Prima del trattamento guardiamo le tue ciglia, ti spieghiamo durata,
+            mantenimento e risultato atteso. Così sai cosa stai facendo e perché.
           </p>
         </div>
         <div className="mt-8">
           <CTAButton
-            href={contactActions.whatsapp}
+            href={whatsappUrl("Ciao, vorrei una consulenza per laminazione ciglia.")}
             target="_blank"
             rel="noreferrer"
             icon={<MessageCircle aria-hidden size={18} />}

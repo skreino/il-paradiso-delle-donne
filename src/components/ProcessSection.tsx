@@ -3,11 +3,11 @@ import { Reveal } from "@/components/Reveal";
 
 export function ProcessSection() {
   return (
-    <section className="section-shell py-20 lg:py-28">
+    <section className="section-shell py-16 lg:py-24">
       <Reveal className="max-w-3xl">
         <p className="eyebrow">Metodo</p>
         <h2 className="mt-4 font-display text-4xl font-bold leading-tight text-espresso sm:text-5xl">
-          Prima ti ascoltiamo, poi scegliamo il trattamento giusto.
+          Prima ti ascoltiamo, poi scegliamo cosa fare.
         </h2>
       </Reveal>
       <div className="mt-12 grid gap-4 lg:grid-cols-5">

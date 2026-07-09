@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 900" role="img" aria-label="Ciglia naturali curate">
+  <rect width="900" height="900" fill="#f8f1ea"/>
+  <ellipse cx="450" cy="508" rx="350" ry="175" fill="#d7a094"/>
+  <path d="M125 450c92-92 205-142 338-150 136-8 255 36 355 134-104-44-220-56-348-34-124 21-239 37-345 50Z" fill="#2b211d" opacity=".42"/>
+  <path d="M215 470c70-48 152-72 246-70 100 1 184 30 254 86-82 44-170 61-264 52-94-8-172-31-236-68Z" fill="#fffdf9" opacity=".72"/>
+  <circle cx="455" cy="468" r="68" fill="#2b211d" opacity=".72"/>
+</svg>

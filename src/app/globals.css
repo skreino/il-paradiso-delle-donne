@@ -4,8 +4,8 @@
 
 :root {
   color-scheme: light;
-  --background: #fbf7ef;
-  --foreground: #2d2926;
+  --background: #f8f1ea;
+  --foreground: #2b211d;
   --font-display: "Cormorant Garamond", "Iowan Old Style", Georgia, serif;
   --font-body: "Nunito Sans", "Segoe UI", Tahoma, sans-serif;
 }
@@ -21,9 +21,9 @@ html {
 body {
   margin: 0;
   background:
-    linear-gradient(90deg, rgba(58, 36, 26, 0.035) 1px, transparent 1px),
-    linear-gradient(180deg, #fffdf8 0%, #fbf7ef 45%, #f2e8dd 100%);
-  background-size: 72px 72px, auto;
+    radial-gradient(circle at 8% 0%, rgba(200, 169, 106, 0.14), transparent 32rem),
+    linear-gradient(180deg, #fffdf9 0%, #f8f1ea 58%, #efe2d6 100%);
+  background-size: auto;
   color: var(--foreground);
   font-family: var(--font-body), Arial, sans-serif;
   text-rendering: optimizeLegibility;
@@ -48,7 +48,7 @@ textarea {
 
 .section-shell {
   margin-inline: auto;
-  max-width: 1180px;
+  max-width: 1200px;
   padding-inline: 1.25rem;
 }
 
@@ -56,7 +56,7 @@ textarea {
   color: #8f675c;
   font-size: 0.76rem;
   font-weight: 800;
-  letter-spacing: 0.14em;
+  letter-spacing: 0.1em;
   text-transform: uppercase;
 }
 
@@ -66,11 +66,17 @@ textarea {
 }
 
 .image-wash::after {
-  background: linear-gradient(180deg, transparent 35%, rgba(58, 36, 26, 0.2));
+  background: linear-gradient(180deg, transparent 48%, rgba(30, 23, 20, 0.22));
   content: "";
   inset: 0;
   pointer-events: none;
   position: absolute;
+}
+
+.photo-texture {
+  background:
+    linear-gradient(135deg, rgba(255, 253, 249, 0.16), transparent 34%),
+    linear-gradient(180deg, transparent, rgba(43, 33, 29, 0.08));
 }
 
 @media (prefers-reduced-motion: reduce) {

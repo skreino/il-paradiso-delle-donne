@@ -27,8 +27,8 @@ docker run -p 3000:3000 il-paradiso-delle-donne
 
 ## Dati modificabili
 
-Contatti, orari, servizi, recensioni placeholder, immagini e link sono in:
+Contatti, orari, servizi, segnali di fiducia, immagini e link sono in:
 
 `src/config/site.ts`
 
-Le immagini placeholder sono in `public/images/` e possono essere sostituite mantenendo gli stessi percorsi.
+Le immagini locali sono in `public/images/` e possono essere sostituite mantenendo gli stessi percorsi.

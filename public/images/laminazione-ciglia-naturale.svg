@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" role="img" aria-label="Laminazione ciglia naturale">
+  <defs><linearGradient id="bg" x1="0" x2="1"><stop stop-color="#f8f1ea"/><stop offset="1" stop-color="#b97a7a"/></linearGradient></defs>
+  <rect width="1200" height="900" fill="url(#bg)"/>
+  <ellipse cx="610" cy="514" rx="430" ry="225" fill="#d7a094" opacity=".82"/>
+  <path d="M190 468c120-120 260-185 420-194 168-10 310 45 428 164-126-60-266-78-420-54-150 24-292 52-428 84Z" fill="#2b211d" opacity=".42"/>
+  <path d="M292 485c78-58 178-88 300-90 125-3 230 34 316 111-88 45-190 64-305 58-126-6-230-32-311-79Z" fill="#fffdf9" opacity=".7"/>
+  <circle cx="604" cy="484" r="90" fill="#2b211d" opacity=".72"/>
+  <circle cx="570" cy="448" r="24" fill="#fffdf9" opacity=".86"/>
+  <g fill="none" stroke="#2b211d" stroke-linecap="round" stroke-width="10" opacity=".52">
+    <path d="M310 332c-22-58-12-111 30-158"/><path d="M422 300c-10-62 12-115 66-157"/><path d="M548 284c8-62 42-110 102-144"/><path d="M682 294c24-58 68-99 132-124"/><path d="M806 330c36-48 84-78 144-90"/>
+  </g>
+</svg>

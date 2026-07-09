@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 1500" role="img" aria-label="Martina e team">
+  <defs><linearGradient id="bg" x1="0" x2="1" y1="0" y2="1"><stop stop-color="#fffdf9"/><stop offset=".52" stop-color="#d8c2ae"/><stop offset="1" stop-color="#1e1714"/></linearGradient></defs>
+  <rect width="1200" height="1500" fill="url(#bg)"/>
+  <circle cx="405" cy="430" r="145" fill="#d7a094"/>
+  <circle cx="790" cy="455" r="145" fill="#d39a8d"/>
+  <path d="M190 1120c30-300 155-455 375-475 220 20 345 175 375 475z" fill="#7a6860"/>
+  <path d="M590 1130c24-275 134-418 330-436 172 20 270 166 296 436z" fill="#2b211d" opacity=".78"/>
+  <path d="M260 365c70-155 245-190 348-40 18 54 8 106-30 156-47-112-143-150-318-116z" fill="#2b211d" opacity=".5"/>
+  <path d="M642 392c66-154 244-190 348-40 20 52 10 108-29 168-44-132-144-178-319-128z" fill="#2b211d" opacity=".45"/>
+</svg>

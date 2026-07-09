@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" role="img" aria-label="Pedicure curata">
+  <defs><linearGradient id="bg" x1="0" x2="1"><stop stop-color="#f8f1ea"/><stop offset="1" stop-color="#d8c2ae"/></linearGradient></defs>
+  <rect width="1200" height="900" fill="url(#bg)"/>
+  <ellipse cx="430" cy="482" rx="150" ry="295" fill="#d8a79b" transform="rotate(8 430 482)"/>
+  <ellipse cx="720" cy="470" rx="150" ry="295" fill="#d39a8d" transform="rotate(-8 720 470)"/>
+  <g fill="#b97a7a">
+    <circle cx="320" cy="225" r="32"/><circle cx="398" cy="184" r="28"/><circle cx="476" cy="184" r="26"/><circle cx="552" cy="215" r="24"/>
+    <circle cx="614" cy="215" r="24"/><circle cx="690" cy="184" r="26"/><circle cx="768" cy="184" r="28"/><circle cx="846" cy="225" r="32"/>
+  </g>
+  <path d="M245 742c205 58 430 60 675 0" fill="none" stroke="#fffdf9" stroke-width="34" stroke-linecap="round" opacity=".72"/>
+</svg>

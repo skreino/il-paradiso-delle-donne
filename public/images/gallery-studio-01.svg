@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 700" role="img" aria-label="Dettaglio studio beauty">
+  <rect width="1200" height="700" fill="#efe2d6"/>
+  <rect x="90" y="90" width="260" height="460" rx="130" fill="#fffdf9" opacity=".7"/>
+  <rect x="810" y="74" width="260" height="490" rx="130" fill="#d8c2ae" opacity=".78"/>
+  <rect x="220" y="470" width="760" height="90" rx="45" fill="#2b211d" opacity=".28"/>
+  <circle cx="600" cy="192" r="78" fill="#c8a96a" opacity=".36"/>
+  <rect x="470" y="315" width="260" height="112" rx="56" fill="#fffdf9" opacity=".58"/>
+</svg>

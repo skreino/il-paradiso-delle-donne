@@ -10,15 +10,15 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        ivory: "#fbf7ef",
-        porcelain: "#fffdf8",
-        nude: "#e8d8c8",
-        almond: "#d6bfa9",
-        espresso: "#3a241a",
-        cocoa: "#6f5346",
-        rose: "#b97975",
-        champagne: "#c9a969",
-        charcoal: "#2d2926"
+        ivory: "#F8F1EA",
+        porcelain: "#FFFDF9",
+        nude: "#EFE2D6",
+        almond: "#D8C2AE",
+        espresso: "#2B211D",
+        cocoa: "#7A6860",
+        rose: "#B97A7A",
+        champagne: "#C8A96A",
+        charcoal: "#1E1714"
       },
       fontFamily: {
         display: ["var(--font-display)", "Georgia", "serif"],
