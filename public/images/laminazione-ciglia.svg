@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" role="img" aria-label="Lash treatment detail placeholder">
+  <defs><linearGradient id="a" x1="0" x2="1"><stop stop-color="#f7eee4"/><stop offset="1" stop-color="#b97975"/></linearGradient></defs>
+  <rect width="1200" height="900" fill="url(#a)"/>
+  <path d="M145 470c160-190 370-280 585-245 150 25 265 111 335 242-130-92-268-137-414-134-184 4-351 53-506 137Z" fill="#3a241a" opacity=".55"/>
+  <path d="M255 476c82-64 177-98 285-102 134-5 252 35 354 119-99 48-206 69-321 64-121-5-227-32-318-81Z" fill="#fffdf8" opacity=".62"/>
+  <circle cx="585" cy="462" r="92" fill="#3a241a" opacity=".72"/>
+  <circle cx="552" cy="428" r="26" fill="#fffdf8" opacity=".8"/>
+  <g fill="none" stroke="#3a241a" stroke-linecap="round" stroke-width="12" opacity=".5">
+    <path d="M280 325c-28-66-20-124 24-174"/><path d="M390 290c-18-71-3-130 45-177"/><path d="M515 266c-6-72 20-127 77-166"/><path d="M650 270c12-70 50-119 113-147"/><path d="M780 302c27-58 74-95 141-111"/>
+  </g>
+</svg>

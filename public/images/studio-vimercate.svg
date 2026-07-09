@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" role="img" aria-label="Beauty studio interior placeholder">
+  <defs><linearGradient id="a" x1="0" x2="1" y1="0" y2="1"><stop stop-color="#fffdf8"/><stop offset=".55" stop-color="#e8d8c8"/><stop offset="1" stop-color="#8f675c"/></linearGradient></defs>
+  <rect width="1200" height="900" fill="url(#a)"/>
+  <rect x="120" y="160" width="360" height="520" rx="180" fill="#fffdf8" opacity=".65"/>
+  <rect x="710" y="130" width="310" height="560" rx="155" fill="#d6bfa9" opacity=".75"/>
+  <rect x="180" y="610" width="840" height="120" rx="60" fill="#3a241a" opacity=".42"/>
+  <circle cx="600" cy="245" r="90" fill="#c9a969" opacity=".45"/>
+  <path d="M0 790h1200v110H0z" fill="#3a241a" opacity=".18"/>
+</svg>

@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" role="img" aria-label="Body treatment placeholder">
+  <defs><linearGradient id="a" x1="0" x2="1" y1="0" y2="1"><stop stop-color="#fffdf8"/><stop offset=".52" stop-color="#e8d8c8"/><stop offset="1" stop-color="#b97975"/></linearGradient></defs>
+  <rect width="1200" height="900" fill="url(#a)"/>
+  <path d="M260 660c115-250 235-380 360-390 160-12 260 118 320 390" fill="none" stroke="#d6a092" stroke-width="120" stroke-linecap="round" opacity=".82"/>
+  <path d="M292 662c170 90 377 112 620 0" fill="none" stroke="#fffdf8" stroke-width="48" stroke-linecap="round" opacity=".54"/>
+  <circle cx="595" cy="235" r="86" fill="#d8a79b"/>
+  <circle cx="945" cy="210" r="140" fill="#c9a969" opacity=".24"/>
+</svg>

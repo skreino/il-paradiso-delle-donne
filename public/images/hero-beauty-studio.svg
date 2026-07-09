@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 1500" role="img" aria-label="Warm premium beauty studio interior placeholder">
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#fffdf8"/>
+      <stop offset="0.42" stop-color="#e8d8c8"/>
+      <stop offset="1" stop-color="#8f675c"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="35%" cy="22%" r="52%">
+      <stop offset="0" stop-color="#fff7e7" stop-opacity=".92"/>
+      <stop offset="1" stop-color="#fff7e7" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="soft"><feGaussianBlur stdDeviation="18"/></filter>
+  </defs>
+  <rect width="1200" height="1500" fill="url(#bg)"/>
+  <rect width="1200" height="1500" fill="url(#glow)"/>
+  <path d="M0 1080c230-90 385-82 590 0 215 86 394 100 610 2v418H0z" fill="#3a241a" opacity=".16"/>
+  <ellipse cx="812" cy="440" rx="250" ry="330" fill="#f4e6d7" opacity=".78" filter="url(#soft)"/>
+  <rect x="170" y="230" width="300" height="850" rx="150" fill="#fffdf8" opacity=".55"/>
+  <rect x="710" y="150" width="250" height="1030" rx="125" fill="#d6bfa9" opacity=".48"/>
+  <circle cx="405" cy="1080" r="148" fill="#b97975" opacity=".2"/>
+  <circle cx="890" cy="1030" r="210" fill="#c9a969" opacity=".18"/>
+</svg>

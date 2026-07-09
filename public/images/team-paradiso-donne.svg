@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 1500" role="img" aria-label="Beauty center team placeholder">
+  <defs><linearGradient id="a" x1="0" x2="1" y1="0" y2="1"><stop stop-color="#fffdf8"/><stop offset=".48" stop-color="#e8d8c8"/><stop offset="1" stop-color="#3a241a"/></linearGradient></defs>
+  <rect width="1200" height="1500" fill="url(#a)"/>
+  <g opacity=".92">
+    <circle cx="405" cy="420" r="150" fill="#d8a79b"/>
+    <circle cx="780" cy="445" r="150" fill="#d6a092"/>
+    <path d="M190 1120c30-300 155-460 375-480 220 20 345 180 375 480z" fill="#8f675c"/>
+    <path d="M580 1130c24-275 134-420 330-438 172 20 270 168 296 438z" fill="#3a241a" opacity=".72"/>
+    <path d="M260 356c68-154 242-188 344-42 20 50 12 99-24 146-46-110-142-146-287-108z" fill="#3a241a" opacity=".52"/>
+    <path d="M640 382c66-154 244-190 348-40 20 52 10 108-29 168-44-132-144-178-319-128z" fill="#3a241a" opacity=".45"/>
+  </g>
+</svg>

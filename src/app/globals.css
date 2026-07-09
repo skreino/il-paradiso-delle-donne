@@ -1,0 +1,89 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light;
+  --background: #fbf7ef;
+  --foreground: #2d2926;
+  --font-display: "Cormorant Garamond", "Iowan Old Style", Georgia, serif;
+  --font-body: "Nunito Sans", "Segoe UI", Tahoma, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background:
+    linear-gradient(90deg, rgba(58, 36, 26, 0.035) 1px, transparent 1px),
+    linear-gradient(180deg, #fffdf8 0%, #fbf7ef 45%, #f2e8dd 100%);
+  background-size: 72px 72px, auto;
+  color: var(--foreground);
+  font-family: var(--font-body), Arial, sans-serif;
+  text-rendering: optimizeLegibility;
+}
+
+body::selection {
+  background: #b97975;
+  color: #fffdf8;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button,
+input,
+select,
+textarea {
+  font: inherit;
+}
+
+.section-shell {
+  margin-inline: auto;
+  max-width: 1180px;
+  padding-inline: 1.25rem;
+}
+
+.eyebrow {
+  color: #8f675c;
+  font-size: 0.76rem;
+  font-weight: 800;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.image-wash {
+  position: relative;
+  overflow: hidden;
+}
+
+.image-wash::after {
+  background: linear-gradient(180deg, transparent 35%, rgba(58, 36, 26, 0.2));
+  content: "";
+  inset: 0;
+  pointer-events: none;
+  position: absolute;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    scroll-behavior: auto !important;
+    transition-duration: 0.01ms !important;
+  }
+}
