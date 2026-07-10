@@ -24,13 +24,13 @@ export function CTAButton({
   return (
     <motion.a
       className={cn(
-        "inline-flex min-h-12 items-center justify-center gap-2 rounded-full px-5 py-3 text-sm font-extrabold transition-colors focus:outline-none focus:ring-2 focus:ring-espresso focus:ring-offset-2 focus:ring-offset-ivory",
+        "inline-flex min-h-12 items-center justify-center gap-2 px-5 py-3 text-sm font-extrabold transition-colors focus:outline-none focus:ring-2 focus:ring-charcoal focus:ring-offset-2 focus:ring-offset-porcelain",
         variant === "primary" &&
-          "bg-espresso text-ivory shadow-button hover:bg-charcoal",
+          "bg-charcoal text-porcelain hover:bg-espresso",
         variant === "secondary" &&
-          "border border-espresso/15 bg-porcelain text-espresso hover:border-espresso/35 hover:bg-white",
+          "border border-charcoal/20 bg-transparent text-charcoal hover:border-charcoal hover:bg-porcelain",
         variant === "ghost" &&
-          "bg-transparent text-espresso underline decoration-rose/40 underline-offset-8 hover:text-rose",
+          "bg-transparent px-0 text-charcoal underline decoration-espresso/35 underline-offset-8 hover:text-espresso",
         className
       )}
       whileHover={reduce ? undefined : { y: -2 }}

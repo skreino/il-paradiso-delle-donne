@@ -1,122 +1,117 @@
 "use client";
 
 import Image from "next/image";
-import { MapPin, MessageCircle, Phone } from "lucide-react";
+import { MessageCircle } from "lucide-react";
 import { motion, useReducedMotion } from "framer-motion";
-import { business, contactActions, heroServices, images } from "@/config/site";
+import { business, contactActions, photos } from "@/config/site";
 import { CTAButton } from "@/components/CTAButton";
-import { TrustBadges } from "@/components/TrustBadges";
 import { motionTokens } from "@/lib/motion";
 
 export function HeroSection() {
   const reduce = useReducedMotion();
 
   return (
-    <section id="top" className="section-shell pb-14 pt-8 lg:pb-24 lg:pt-14">
-      <div className="grid gap-9 lg:grid-cols-[0.92fr_1.08fr] lg:items-center">
+    <section id="top" className="relative overflow-hidden bg-porcelain">
+      <div className="section-shell relative min-h-[calc(100svh-68px)] pb-14 pt-8 lg:min-h-[760px] lg:pb-20 lg:pt-10">
         <motion.div
-          initial={{ opacity: 0, y: reduce ? 0 : 24 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{
-            duration: reduce ? 0.1 : motionTokens.duration.slow,
-            ease: motionTokens.easing.smooth
-          }}
+          className="relative grid min-h-[650px] grid-cols-6 grid-rows-[120px_220px_120px_120px] gap-3 sm:grid-rows-[150px_260px_120px_120px] lg:min-h-[720px] lg:grid-cols-12 lg:grid-rows-[90px_240px_180px_150px]"
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: reduce ? 0.1 : 0.55, ease: motionTokens.easing.smooth }}
         >
-          <div className="inline-flex rounded-full border border-espresso/10 bg-porcelain px-4 py-2 text-xs font-extrabold uppercase tracking-[0.1em] text-cocoa">
-            Centro estetico a Vimercate
-          </div>
-          <h1 className="mt-5 max-w-3xl font-display text-[2.75rem] font-bold leading-[0.96] text-espresso sm:text-6xl lg:text-7xl">
-            Ciglia, unghie e trattamenti viso nel cuore di Vimercate.
-          </h1>
-          <p className="mt-6 max-w-xl text-base leading-8 text-cocoa sm:text-lg">
-            Un centro estetico dove ogni trattamento parte da una cosa semplice:
-            capire cosa ti serve davvero e curarlo con precisione.
-          </p>
-
-          <div className="mt-7 flex flex-col gap-3 sm:flex-row">
-            <CTAButton
-              href={contactActions.whatsapp}
-              target="_blank"
-              rel="noreferrer"
-              icon={<MessageCircle aria-hidden size={18} />}
-            >
-              Prenota su WhatsApp
-            </CTAButton>
-            <CTAButton
-              href={contactActions.phone}
-              variant="secondary"
-              icon={<Phone aria-hidden size={18} />}
-            >
-              Chiama il centro
-            </CTAButton>
-            <CTAButton href="#trattamenti" variant="ghost" className="justify-center px-2">
-              Guarda i trattamenti
-            </CTAButton>
-          </div>
-
-          <div className="mt-7 flex items-start gap-3 rounded-2xl border border-espresso/10 bg-porcelain/80 p-4 text-sm text-cocoa">
-            <MapPin aria-hidden className="mt-1 shrink-0 text-rose" size={18} />
-            <p>
-              {business.address}, {business.postalCity}. Una posizione comoda
-              per chi vive o lavora a Vimercate e nei dintorni.
-            </p>
-          </div>
-
-          <div className="mt-7">
-            <TrustBadges />
-          </div>
-        </motion.div>
-
-        <motion.div
-          className="relative"
-          initial={{ opacity: 0, scale: reduce ? 1 : 0.97 }}
-          animate={{ opacity: 1, scale: 1 }}
-          transition={{
-            duration: reduce ? 0.1 : motionTokens.duration.slow,
-            ease: motionTokens.easing.smooth,
-            delay: reduce ? 0 : 0.12
-          }}
-        >
-          <div className="image-wash relative aspect-[4/5] overflow-hidden rounded-[1.75rem] border border-white/80 bg-nude shadow-soft">
+          <motion.div
+            className="relative col-span-4 col-start-3 row-span-2 row-start-1 overflow-hidden bg-nude lg:col-span-5 lg:col-start-7 lg:row-span-4 lg:row-start-1"
+            initial={{ y: reduce ? 0 : 24 }}
+            animate={{ y: 0 }}
+            transition={{ duration: reduce ? 0.1 : 0.65, ease: motionTokens.easing.smooth }}
+          >
             <Image
-              src={images.hero}
-              alt="Centro estetico caldo e ordinato a Vimercate"
+              src={photos.heroMain}
+              alt="Macro editoriale dello sguardo con pelle luminosa"
               fill
               priority
-              className="object-cover photo-texture"
-              sizes="(min-width: 1024px) 52vw, 100vw"
+              className="object-cover"
+              sizes="(min-width: 1024px) 42vw, 70vw"
+              style={{ objectPosition: "52% 42%" }}
             />
-          </div>
-          <div className="absolute -bottom-5 left-4 right-4 rounded-2xl border border-espresso/10 bg-porcelain/95 p-4 shadow-soft backdrop-blur sm:left-6 sm:right-auto sm:max-w-[320px] sm:p-5">
-            <p className="font-display text-3xl font-bold text-espresso">dal 2019</p>
-            <p className="mt-1 text-sm leading-6 text-cocoa">
-              Martina e il team seguono mani, sguardo e trattamenti beauty con
-              un approccio diretto e attento.
+          </motion.div>
+
+          <motion.div
+            className="relative col-span-3 col-start-1 row-span-2 row-start-2 overflow-hidden bg-nude lg:col-span-4 lg:col-start-1 lg:row-span-2 lg:row-start-2"
+            initial={{ y: reduce ? 0 : 32 }}
+            animate={{ y: 0 }}
+            transition={{
+              duration: reduce ? 0.1 : 0.7,
+              ease: motionTokens.easing.smooth,
+              delay: reduce ? 0 : 0.08
+            }}
+          >
+            <Image
+              src={photos.heroSkin}
+              alt="Dettaglio pelle e labbra in luce naturale"
+              fill
+              priority
+              className="object-cover"
+              sizes="(min-width: 1024px) 32vw, 50vw"
+              style={{ objectPosition: "55% 38%" }}
+            />
+          </motion.div>
+
+          <motion.div
+            className="relative col-span-3 col-start-4 row-span-1 row-start-4 overflow-hidden bg-nude lg:col-span-3 lg:col-start-5 lg:row-span-1 lg:row-start-4"
+            initial={{ y: reduce ? 0 : 18 }}
+            animate={{ y: 0 }}
+            transition={{
+              duration: reduce ? 0.1 : 0.6,
+              ease: motionTokens.easing.smooth,
+              delay: reduce ? 0 : 0.14
+            }}
+          >
+            <Image
+              src={photos.heroFacial}
+              alt="Trattamento viso con pelle detersa in cabina"
+              fill
+              priority
+              className="object-cover"
+              sizes="(min-width: 1024px) 24vw, 50vw"
+              style={{ objectPosition: "50% 42%" }}
+            />
+          </motion.div>
+
+          <div className="pointer-events-none absolute inset-x-0 top-[118px] z-10 lg:top-[95px]">
+            <p className="mb-4 max-w-[270px] text-xs font-bold uppercase tracking-[0.16em] text-espresso sm:max-w-none">
+              Ciglia, unghie e trattamenti viso a Vimercate
             </p>
+            <h1 className="hero-title max-w-[1050px] font-display font-semibold leading-[0.82] tracking-[-0.03em] text-charcoal">
+              La bellezza,
+              <br />
+              nella sua <em className="font-normal italic">forma</em>
+              <br />
+              più <em className="font-normal italic">autentica.</em>
+            </h1>
+          </div>
+
+          <div className="absolute bottom-0 left-0 z-20 max-w-[540px] border-t border-charcoal/20 bg-porcelain/92 pb-1 pt-5 backdrop-blur-sm lg:bottom-12 lg:left-auto lg:right-0 lg:w-[410px] lg:border-l lg:border-t-0 lg:pl-7">
+            <p className="text-base leading-7 text-cocoa">
+              Da {business.name} trovi trattamenti per sguardo, mani, viso e
+              corpo, con consigli chiari e appuntamenti gestiti con attenzione.
+            </p>
+            <div className="mt-5 flex flex-col gap-3 sm:flex-row lg:flex-col">
+              <CTAButton
+                href={contactActions.whatsapp}
+                target="_blank"
+                rel="noreferrer"
+                icon={<MessageCircle aria-hidden size={18} />}
+              >
+                Prenota su WhatsApp
+              </CTAButton>
+              <CTAButton href="#servizi" variant="secondary">
+                Esplora i servizi
+              </CTAButton>
+            </div>
           </div>
         </motion.div>
       </div>
-
-      <motion.div
-        className="mt-12 grid gap-3 rounded-[1.5rem] border border-espresso/10 bg-porcelain/80 p-3 shadow-[0_18px_50px_rgba(43,33,29,0.06)] sm:grid-cols-3"
-        initial={{ opacity: 0, y: reduce ? 0 : 16 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{
-          duration: reduce ? 0.1 : motionTokens.duration.normal,
-          ease: motionTokens.easing.smooth,
-          delay: reduce ? 0 : 0.18
-        }}
-      >
-        {heroServices.map((item) => (
-          <a
-            key={item.label}
-            href={item.href}
-            className="rounded-2xl border border-espresso/10 bg-white/70 px-4 py-4 font-display text-2xl font-bold text-espresso transition-colors hover:bg-white"
-          >
-            {item.label}
-          </a>
-        ))}
-      </motion.div>
     </section>
   );
 }

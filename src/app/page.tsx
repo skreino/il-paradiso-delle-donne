@@ -4,12 +4,11 @@ import { Footer } from "@/components/Footer";
 import { GallerySection } from "@/components/GallerySection";
 import { HeroSection } from "@/components/HeroSection";
 import { LocationSection } from "@/components/LocationSection";
+import { ManifestoSection } from "@/components/ManifestoSection";
 import { MobileBottomBar } from "@/components/MobileBottomBar";
 import { Navbar } from "@/components/Navbar";
 import { ProcessSection } from "@/components/ProcessSection";
-import { ReviewsSection } from "@/components/ReviewsSection";
 import { ServicesSection } from "@/components/ServicesSection";
-import { SignatureTreatmentSection } from "@/components/SignatureTreatmentSection";
 
 export default function Home() {
   return (
@@ -17,10 +16,9 @@ export default function Home() {
       <Navbar />
       <main>
         <HeroSection />
+        <ManifestoSection />
         <ServicesSection />
-        <SignatureTreatmentSection />
         <AboutSection />
-        <ReviewsSection />
         <GallerySection />
         <ProcessSection />
         <LocationSection />

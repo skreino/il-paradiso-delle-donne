@@ -4,10 +4,10 @@
 
 :root {
   color-scheme: light;
-  --background: #f8f1ea;
-  --foreground: #2b211d;
-  --font-display: "Cormorant Garamond", "Iowan Old Style", Georgia, serif;
-  --font-body: "Nunito Sans", "Segoe UI", Tahoma, sans-serif;
+  --background: #fcfaf7;
+  --foreground: #1c1a19;
+  --font-display: "Iowan Old Style", "Cormorant Garamond", "Times New Roman", serif;
+  --font-body: "Aptos", "Segoe UI", Tahoma, sans-serif;
 }
 
 * {
@@ -20,9 +20,7 @@ html {
 
 body {
   margin: 0;
-  background:
-    radial-gradient(circle at 8% 0%, rgba(200, 169, 106, 0.14), transparent 32rem),
-    linear-gradient(180deg, #fffdf9 0%, #f8f1ea 58%, #efe2d6 100%);
+  background: #fcfaf7;
   background-size: auto;
   color: var(--foreground);
   font-family: var(--font-body), Arial, sans-serif;
@@ -48,8 +46,8 @@ textarea {
 
 .section-shell {
   margin-inline: auto;
-  max-width: 1200px;
-  padding-inline: 1.25rem;
+  max-width: 1320px;
+  padding-inline: clamp(1rem, 4vw, 3.5rem);
 }
 
 .eyebrow {
@@ -58,6 +56,14 @@ textarea {
   font-weight: 800;
   letter-spacing: 0.1em;
   text-transform: uppercase;
+}
+
+.editorial-rule {
+  border-top: 1px solid rgba(28, 26, 25, 0.16);
+}
+
+.text-balance {
+  text-wrap: balance;
 }
 
 .image-wash {
@@ -77,6 +83,12 @@ textarea {
   background:
     linear-gradient(135deg, rgba(255, 253, 249, 0.16), transparent 34%),
     linear-gradient(180deg, transparent, rgba(43, 33, 29, 0.08));
+}
+
+@supports (font-size: clamp(1rem, 1vw, 2rem)) {
+  .hero-title {
+    font-size: clamp(4.2rem, 10.8vw, 10.5rem);
+  }
 }
 
 @media (prefers-reduced-motion: reduce) {

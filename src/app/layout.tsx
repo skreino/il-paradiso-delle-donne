@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import { business, contactActions, seo } from "@/config/site";
+import { business, contactActions, photos, seo } from "@/config/site";
 
 export const metadata: Metadata = {
   title: seo.title,
@@ -17,7 +17,7 @@ export const metadata: Metadata = {
     locale: "it_IT",
     images: [
       {
-        url: "/images/hero-centro-estetico-vimercate.svg",
+        url: photos.heroMain,
         width: 1200,
         height: 630,
         alt: "Il Paradiso delle Donne, centro estetico a Vimercate"
@@ -43,7 +43,7 @@ const localBusinessSchema = {
   },
   areaServed: business.area,
   url: "https://il-paradiso-delle-donne.vercel.app/",
-  image: "https://il-paradiso-delle-donne.vercel.app/images/hero-centro-estetico-vimercate.svg",
+  image: `https://il-paradiso-delle-donne.vercel.app${photos.heroMain}`,
   sameAs: [contactActions.directions],
   openingHoursSpecification: business.hours.map(([day, time]) => ({
     "@type": "OpeningHoursSpecification",
